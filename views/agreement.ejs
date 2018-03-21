@@ -51,7 +51,7 @@
 <body>
   <h1>CYLINDER SUPPLY AGREEMENT </h1>
 
-  <p>This CYLINDER SUPPLY AGREEMENT (‘Agreement’) is made on Date: <%= date %></p>
+  <p>This CYLINDER SUPPLY AGREEMENT (‘Agreement’) is made on Date:</p>
 
   <h2>BY AND BETWEEN</h2>
 <p>TRI GASES PRIVATE LIMITED, a Company incorporated and registered under the provisions of Companies Act, 1956, having its
@@ -60,13 +60,16 @@ India (hereinafter referred to as “Seller” which expression, where the conte
 assigns ) ….. OF THE FIRST PART.</p>
 
   <p>This document was signed by <span class="info"><%= name %></span> on behalf of <span class="info"><%= company %></span>.</p>
-
+  <div class="signature-block">
+    <p class="signature-field"><img src="<%= signature %>" height="55"></p>
+    <p>Name: <%= name %><br>Role: <%= role %><br>Date: <%= date %></p>
+  </div>
 
 
   <table class="form" cellpadding="0" cellspacing="0" width="100%">
     <tr>
       <td><label>Company name:</label><p><%= company %></p></td>
-      <td><label>States:</label><p><%= state %></p></td>
+          <td><label>Country:</label><p><%= country %></p></td>
     </tr>
     <tr>
       <td><label>Name:</label><p><%= name %></p></td>
@@ -77,9 +80,6 @@ assigns ) ….. OF THE FIRST PART.</p>
     </tr>
   </table>
 
-  <div class="signature-block">
-    <p class="signature-field"><img src="<%= signature %>" height="55"></p>
-    <p>Name: <%= name %><br>Role: <%= role %><br>Date: <%= date %></p>
-  </div>
+
 </body>
 </html>
