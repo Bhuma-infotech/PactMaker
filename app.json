@@ -1,5 +1,5 @@
 {
-  "name": "PactMaker",
+  "name": "TRIPact",
   "description": "Starter workflow for creating self-signed PDF agreements with node.js and express",
   "scripts": {
   },
